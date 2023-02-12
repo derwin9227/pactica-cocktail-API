@@ -18,10 +18,14 @@ const apiConnect = (inputCoctel) => fetch(`https://thecocktaildb.com/api/json/v1
         if(cocteles.drinks === null){
             console.log(`no hay datos del siguiente coctel -> ${inputCoctel} <-`)}
         else{
-            coctel.innerHTML = templateCoctel(cocteles.drinks[0].strDrink, cocteles.drinks[0].strInstructions, cocteles.drinks[0].strDrinkThumb);
-        console.log(`nombre del coctel -${cocteles.drinks[0].strDrink}- bebida tipo +${cocteles.drinks[0].strAlcoholic}+`)}
+            coctel.innerHTML = templateCoctel(cocteles.drinks[0].strDrink, cocteles.drinks[0].strInstructions, cocteles.drinks[0].strDrinkThumb);}
         })
     .catch(e => console.log(e))
 
 const buscarCoctel = (nombreCoctel) => apiConnect(inputCoctel.value);
 botonBuscar.addEventListener("click", () => buscarCoctel());
+botonBuscar.addEventListener("mouseover", () => {botonBuscar.style.backgroundColor = "#0000df"; botonBuscar.style.color = "white"});
+
+botonBuscar.addEventListener("mouseleave", () => {botonBuscar.style.backgroundColor = "dimgray"; botonBuscar.style.color = "black"});
+
+inputCoctel.addEventListener("keypress", e => e.key==="Enter" ? buscarCoctel() : "");
