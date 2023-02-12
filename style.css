@@ -7,7 +7,8 @@ body{
     width: 50%;
     height: fit-content;
     padding-bottom: 1em;
-    border: 1px black dashed;
+    border: none;
+    box-shadow: 3px 1.5px 9px black;
     border-radius: 2%;
     background-color: #afafff;
     display: flex;
@@ -35,7 +36,6 @@ button{
 #coctel{
     width: 90%;
     height: 75%;
-    border: 1px solid white;
     margin-top: 1em;
 }
 /* h2, img, p */
