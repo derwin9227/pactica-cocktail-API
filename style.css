@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(to top,#0000ff, #00ff00);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+}
+.container{
+    width: 50%;
+    height: 60%;
+    border: 1px black dashed;
+    border-radius: 2%;
+    background-color: #afafff;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+input{
+    width: 85%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+    text-align: center;
+}
+button{
+    width: fit-content;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: none;
+    background-color:dimgray;
+}
+.coctel{
+    width: 90%;
+    height: 75%;
+    border: 1px solid white;
+    margin-top: 1em;
+}
