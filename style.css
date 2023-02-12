@@ -5,7 +5,8 @@ body{
 }
 .container{
     width: 50%;
-    height: 60%;
+    height: fit-content;
+    padding-bottom: 1em;
     border: 1px black dashed;
     border-radius: 2%;
     background-color: #afafff;
@@ -31,9 +32,28 @@ button{
     border: none;
     background-color:dimgray;
 }
-.coctel{
+#coctel{
     width: 90%;
     height: 75%;
     border: 1px solid white;
     margin-top: 1em;
+}
+/* h2, img, p */
+h2{
+    font-size: 1em;
+    text-align: center;
+}
+h2::first-letter{
+    text-transform: capitalize;
+}
+img{
+    width: 70%;
+    margin: auto;
+    display: block;
+    border: none transparent;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+    padding: 3px 12px;
 }
