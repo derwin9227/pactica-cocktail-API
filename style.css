@@ -57,3 +57,7 @@ p{
     text-align: justify;
     padding: 3px 12px;
 }
+#buscarCoctel:hover{
+    background-color: #0000df;
+    color: white;
+}
