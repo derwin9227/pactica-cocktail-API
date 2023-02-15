@@ -16,6 +16,7 @@ body{
     margin: auto;
     align-items: center;
 }
+
 h1{
     text-align: center;
 }
@@ -38,7 +39,6 @@ button{
     height: 75%;
     margin-top: 1em;
 }
-/* h2, img, p */
 h2{
     font-size: 1em;
     text-align: center;

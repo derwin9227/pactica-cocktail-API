@@ -1,9 +1,3 @@
-/* 
-strDrink
-strAlcoholic
-strInstructions
-strDrinkThumb
- */
 const inputCoctel = document.getElementById("inputCoctel");
 const botonBuscar =  document.getElementById("buscarCoctel");
 const coctel = document.getElementById("coctel");
